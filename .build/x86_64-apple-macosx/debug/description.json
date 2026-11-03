@@ -1,0 +1,471 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ScaleneFirewall-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/sources",
+      "importPath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Backend.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/ConnectionMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/FirewallModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/HostResolver.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/PromptCoordinator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/SocketScanner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Views.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/WindowManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/AppIdentity.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Database.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/RuleStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "ScaleneFirewall",
+      "moduleOutputPath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/Modules/ScaleneFirewall.swiftmodule",
+      "objects" : [
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppDelegate.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Backend.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/ConnectionMonitor.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/FirewallModel.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/HostResolver.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/PromptCoordinator.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/SocketScanner.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Views.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/WindowManager.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/main.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppIdentity.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Database.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Models.swift.o",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/RuleStore.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "ScaleneFirewall_main",
+        "-swift-version",
+        "5",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "macosfirewall"
+      ],
+      "outputFileMapPath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Backend.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/ConnectionMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/FirewallModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/HostResolver.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/PromptCoordinator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/SocketScanner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Views.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/WindowManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppIdentity.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Database.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/RuleStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/Modules/ScaleneFirewall.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/AppDelegate.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Backend.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/ConnectionMonitor.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/FirewallModel.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/HostResolver.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/PromptCoordinator.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/SocketScanner.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Views.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/WindowManager.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/main.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/AppIdentity.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Database.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Models.swift",
+        "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/RuleStore.swift"
+      ],
+      "tempsPath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ScaleneFirewall" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "ScaleneFirewall",
+      "-package-name",
+      "macosfirewall",
+      "-incremental",
+      "-c",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/AppDelegate.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Backend.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/ConnectionMonitor.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/FirewallModel.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/HostResolver.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/PromptCoordinator.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/SocketScanner.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Views.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/WindowManager.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/main.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/AppIdentity.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Database.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Models.swift",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/RuleStore.swift",
+      "-I",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "ScaleneFirewall_main",
+      "-swift-version",
+      "5",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "macosfirewall",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ScaleneFirewall" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall-entitlement.plist"
+    },
+    "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Backend.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/ConnectionMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/FirewallModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/HostResolver.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/PromptCoordinator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/SocketScanner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Views.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/WindowManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/AppIdentity.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Database.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/RuleStore.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/sources"
+    },
+    "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/AppIdentity.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Backend.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/ConnectionMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Database.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/FirewallModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/HostResolver.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/PromptCoordinator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/RuleStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/SocketScanner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/Views.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/WindowManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/ScaleneFirewall.product/Objects.LinkFileList"
+    },
+    "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

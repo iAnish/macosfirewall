@@ -1,0 +1,14 @@
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/AppDelegate.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Backend.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/ConnectionMonitor.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/FirewallModel.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/HostResolver.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/PromptCoordinator.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/SocketScanner.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/Views.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/WindowManager.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/App/main.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/AppIdentity.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Database.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/Models.swift
+/Users/anish.vijayan/Documents/ScaleneIntelligence/macosfirewall/Sources/Shared/RuleStore.swift
