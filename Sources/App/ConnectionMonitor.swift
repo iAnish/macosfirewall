@@ -16,7 +16,7 @@ final class ConnectionMonitor {
 
     private let db: FirewallDatabase
     private let rules: RuleStore
-    private let queue = DispatchQueue(label: "com.scaleneintelligence.macosfirewall.monitor")
+    private let queue = DispatchQueue(label: "com.ianish.firewall.monitor")
     private var timer: DispatchSourceTimer?
     private var seen = Set<SocketInfo>()
     private var pending: [String: [SocketInfo]] = [:]

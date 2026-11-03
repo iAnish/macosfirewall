@@ -181,7 +181,7 @@ struct HistoryView: View {
 
 struct AboutView: View {
     private var name: String {
-        Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? "Scalene Firewall"
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? "iAnish Firewall"
     }
     private var version: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0.0"

@@ -13,7 +13,7 @@ protocol FirewallBackend: AnyObject {
     func removeRule(key: String) async
 }
 
-/// Real backend: everything runs inside this app. Data lives in ~/Library/Application Support/ScaleneFirewall.
+/// Real backend: everything runs inside this app. Data lives in ~/Library/Application Support/iAnishFirewall.
 final class LocalBackend: FirewallBackend {
     var promptHandler: ((PromptRequest, @escaping (Bool) -> Void) -> Void)?
     let isDemo = false
@@ -22,7 +22,7 @@ final class LocalBackend: FirewallBackend {
     private let rules: RuleStore
 
     init?() {
-        let dir = NSHomeDirectory() + "/Library/Application Support/ScaleneFirewall"
+        let dir = NSHomeDirectory() + "/Library/Application Support/iAnishFirewall"
         guard let db = FirewallDatabase(path: dir + "/firewall.sqlite") else { return nil }
         self.db = db
         rules = RuleStore(db: db)
@@ -53,7 +53,7 @@ final class DemoBackend: FirewallBackend {
     private let db: FirewallDatabase
 
     init() {
-        let path = NSTemporaryDirectory() + "scalene-firewall-demo.sqlite"
+        let path = NSTemporaryDirectory() + "ianish-firewall-demo.sqlite"
         try? FileManager.default.removeItem(atPath: path)
         db = FirewallDatabase(path: path)!
         seed()

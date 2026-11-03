@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleIdentifier</key><string>com.scaleneintelligence.macosfirewall</string>
-    <key>CFBundleExecutable</key><string>ScaleneFirewall</string>
-    <key>CFBundleName</key><string>ScaleneFirewall</string>
-    <key>CFBundleDisplayName</key><string>Scalene Firewall</string>
+    <key>CFBundleIdentifier</key><string>com.ianish.firewall</string>
+    <key>CFBundleExecutable</key><string>iAnishFirewall</string>
+    <key>CFBundleName</key><string>iAnishFirewall</string>
+    <key>CFBundleDisplayName</key><string>iAnish Firewall</string>
     <key>CFBundlePackageType</key><string>APPL</string>
     <key>CFBundleShortVersionString</key><string>1.0.0</string>
     <key>CFBundleVersion</key><string>1</string>

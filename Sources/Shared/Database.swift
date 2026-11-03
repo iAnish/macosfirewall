@@ -8,7 +8,7 @@ final class FirewallDatabase {
     static let retention: TimeInterval = 36 * 3600
 
     private var db: OpaquePointer?
-    private let queue = DispatchQueue(label: "com.scaleneintelligence.macosfirewall.db")
+    private let queue = DispatchQueue(label: "com.ianish.firewall.db")
     private var writesSincePrune = 0
 
     private enum Bind { case text(String), int(Int64), real(Double) }

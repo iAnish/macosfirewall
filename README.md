@@ -1,10 +1,10 @@
-# Scalene Firewall
+# iAnish Firewall
 
-A lightweight, menu-bar-only application firewall for macOS 14 (Sonoma) and later. The first time an app tries to use the network, Scalene Firewall asks whether to **Allow** or **Block** it and remembers your answer. It also keeps a searchable history of the last 36 hours of network connections.
+A lightweight, menu-bar-only application firewall for macOS 14 (Sonoma) and later. The first time an app tries to use the network, iAnish Firewall asks whether to **Allow** or **Block** it and remembers your answer. It also keeps a searchable history of the last 36 hours of network connections.
 
 It runs entirely on your own Mac and needs **no Apple Developer account, no signing certificate, no system/network extension and no admin password**.
 
-> **Please read [Limitations](#limitations).** Scalene Firewall works in user space by watching which apps have open connections. It is not a kernel-level packet filter, and "Block" works by terminating the app's processes.
+> **Please read [Limitations](#limitations).** iAnish Firewall works in user space by watching which apps have open connections. It is not a kernel-level packet filter, and "Block" works by terminating the app's processes.
 
 ## Features
 
@@ -44,7 +44,7 @@ It runs entirely on your own Mac and needs **no Apple Developer account, no sign
    - **Allowed**: the connection is logged.
    - **Blocked**: the app's processes are sent `SIGTERM`, then `SIGKILL` if they are still connected on a later poll. The attempt is logged as *Blocked*.
    - **Unknown**: all the app's processes are paused (`SIGSTOP`) and the Allow/Block dialog is shown. **Allow** resumes them (`SIGCONT`); **Block** resumes and then terminates them. The answer is saved as a rule.
-4. Quitting Scalene Firewall resumes any app it had paused.
+4. Quitting iAnish Firewall resumes any app it had paused.
 
 **Connection types** shown in History: `DNS` (port 53), `HTTP` (TCP 80/8080), `HTTPS` (TCP 443), `QUIC` (UDP 443), otherwise `TCP` or `UDP`. A connection is **Incoming** if its local port is one the same process is listening on, otherwise **Outgoing**.
 
@@ -65,17 +65,17 @@ There is no prebuilt download; you build the app yourself (about a minute).
 git clone https://github.com/iAnish/macosfirewall.git
 cd macosfirewall
 ./build.sh
-open build/ScaleneFirewall.app
+open build/iAnishFirewall.app
 ```
 
-`build.sh` produces `build/ScaleneFirewall.app` as a universal binary (arm64 + x86_64) and signs it ad hoc. To build for your Mac's architecture only, which is faster:
+`build.sh` produces `build/iAnishFirewall.app` as a universal binary (arm64 + x86_64) and signs it ad hoc. To build for your Mac's architecture only, which is faster:
 
 ```bash
 ARCHS=arm64 ./build.sh      # Apple Silicon
 ARCHS=x86_64 ./build.sh     # Intel
 ```
 
-**Optional:** copy `build/ScaleneFirewall.app` to `/Applications`. This is recommended if you want *Launch at Login* to work.
+**Optional:** copy `build/iAnishFirewall.app` to `/Applications`. This is recommended if you want *Launch at Login* to work.
 
 **Gatekeeper:** because the app is not notarized, macOS may warn about it if it was downloaded or copied from another machine. Right-click the app, choose **Open**, then confirm. An app you build locally normally opens without a warning.
 
@@ -84,14 +84,14 @@ ARCHS=x86_64 ./build.sh     # Intel
 Demo mode uses a throwaway database filled with sample apps and history, plus a simulated first-connection prompt for "Notes". It never pauses or terminates real processes.
 
 ```bash
-swift run ScaleneFirewall --demo
+swift run iAnishFirewall --demo
 ```
 
 ### Development
 
 ```bash
 swift build
-swift run ScaleneFirewall
+swift run iAnishFirewall
 ```
 
 `swift run` starts the real firewall, so it will pause and ask about apps just like the installed app.
@@ -100,7 +100,7 @@ swift run ScaleneFirewall
 
 ### First launch
 
-Scalene Firewall asks about **every app that already has an open connection** (browsers, Dropbox, chat apps and so on), one dialog at a time. Each app is paused until you answer, so expect a short burst of prompts the first time. After that you are only asked when a new app connects for the first time.
+iAnish Firewall asks about **every app that already has an open connection** (browsers, Dropbox, chat apps and so on), one dialog at a time. Each app is paused until you answer, so expect a short burst of prompts the first time. After that you are only asked when a new app connects for the first time.
 
 > Don't block the app that hosts your terminal or an AI assistant unless you mean to; it will be terminated.
 
@@ -141,20 +141,20 @@ A small window with the app name and version number.
 
 ### Where data is stored
 
-`~/Library/Application Support/ScaleneFirewall/firewall.sqlite`
+`~/Library/Application Support/iAnishFirewall/firewall.sqlite`
 
 | Table | Contents |
 | --- | --- |
 | `rules` | App key (path of the `.app` or executable), name, action (allow/block), last updated. |
 | `connections` | App, type, direction, timestamp, source, destination, result. |
 
-Connections older than 36 hours are pruned when the app starts and after every 500 new records. You can inspect the file with any SQLite tool, for example `sqlite3 ~/Library/Application\ Support/ScaleneFirewall/firewall.sqlite`.
+Connections older than 36 hours are pruned when the app starts and after every 500 new records. You can inspect the file with any SQLite tool, for example `sqlite3 ~/Library/Application\ Support/iAnishFirewall/firewall.sqlite`.
 
 ## Project structure
 
 ```
 macosfirewall/
-├── build.sh                    # Builds build/ScaleneFirewall.app (ad-hoc signed)
+├── build.sh                    # Builds build/iAnishFirewall.app (ad-hoc signed)
 ├── Package.swift               # Swift package manifest (swift build / swift run)
 ├── Resources/
 │   └── App-Info.plist          # App bundle metadata (menu-bar-only app)
@@ -179,7 +179,7 @@ macosfirewall/
 
 ## Limitations
 
-Scalene Firewall is a convenience and visibility tool for your own Mac, not a security boundary. Real per-app packet filtering on macOS requires a signed Network Extension, which needs a paid Apple Developer account. This project deliberately avoids that, with the trade-offs below.
+iAnish Firewall is a convenience and visibility tool for your own Mac, not a security boundary. Real per-app packet filtering on macOS requires a signed Network Extension, which needs a paid Apple Developer account. This project deliberately avoids that, with the trade-offs below.
 
 ### Detection
 
@@ -209,11 +209,11 @@ Scalene Firewall is a convenience and visibility tool for your own Mac, not a se
 
 ## Troubleshooting
 
-- **An app stays frozen after Scalene Firewall crashed.** Resume it from Terminal:
+- **An app stays frozen after iAnish Firewall crashed.** Resume it from Terminal:
   ```bash
   killall -CONT "<process name>"
   ```
-- **Reset all rules and history.** Quit the app and delete `~/Library/Application Support/ScaleneFirewall`.
+- **Reset all rules and history.** Quit the app and delete `~/Library/Application Support/iAnishFirewall`.
 - **The menu bar icon is missing.** The menu bar may be full; quit other menu bar apps or hide some items.
 - **An app I blocked keeps closing.** That is expected; see [Blocking](#blocking). Unblock it in **Settings**.
 - **A browser or other app I allowed still isn't listed in History.** Its connections may be short-lived, owned by a system service, or made by a process of another user; see [Limitations](#limitations).
@@ -222,12 +222,12 @@ Scalene Firewall is a convenience and visibility tool for your own Mac, not a se
 
 1. Turn off **Launch at Login** in the menu.
 2. Choose **Quit** from the menu.
-3. Delete `ScaleneFirewall.app`.
-4. Delete `~/Library/Application Support/ScaleneFirewall`.
+3. Delete `iAnishFirewall.app`.
+4. Delete `~/Library/Application Support/iAnishFirewall`.
 
 ## Contributing
 
-Issues and pull requests are welcome. Please run `swift build` before submitting changes, and try your change in demo mode (`swift run ScaleneFirewall --demo`) when it affects the UI.
+Issues and pull requests are welcome. Please run `swift build` before submitting changes, and try your change in demo mode (`swift run iAnishFirewall --demo`) when it affects the UI.
 
 ## License
 
