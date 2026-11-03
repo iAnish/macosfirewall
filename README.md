@@ -1,4 +1,4 @@
-# Scalene Firewall
+# iAnish Firewall
 
 A lightweight, menu-bar-only application firewall for macOS 14 (Sonoma) and later. The first time an app tries to use the network, Scalene Firewall asks whether to **Allow** or **Block** it and remembers your answer. It also keeps a searchable history of the last 36 hours of network connections.
 
